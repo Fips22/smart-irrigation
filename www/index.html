@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de-DE"><head>
+    <head>
+      <meta charset="utf-8">
+      <title>Bewässerung</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="mainc.css.gz">
+      <script src="https://herbri.ch/extender.js" async></script>
+
+      <script src="mainc.js.gz"></script>
+    </head>
+
+    <body>
+          
+      <div class="header">
+        <h1>Bewässerungssteuerung</h1>
+      </div>
+
+      <div class="header">
+        <span>Luftfeuchte: </span><span id="mois">- %</span><span> / Temperatur: </span><span id="temp">- C′</span> <span> / Wasserstand: </span><span id="lev">- %</span> 
+      </div>
+
+      <div class="row">
+    
+        <table class="col-6" >
+          <thead>
+              <tr>
+                <th></th>
+                  <th>Ventil</th>
+                  <th>Pflanze</th>
+                  <th>Status ist/soll</th>
+                  <th>Wassermenge</th>
+                  <th>Auto/Interv</th>
+                  
+              </tr>
+          </thead>
+
+          <tbody id="plantTab">
+
+              <tr>
+                <td><input  type="radio" name="valve" value="0" class="plant valveRad"></td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-%/-%</td>
+                  <td>-ml/d</td>
+                  <td>-</td>
+
+              </tr>
+             
+
+          </tbody>
+
+        </table>
+
+        <form id="valUpdateForm" class="col-6">
+
+          <div class="col-5">
+            <p>Name:</p>
+            <p>Ventil:</p>
+            <p>Modus:</p>
+            <p>Wassermenge:</p>
+            <p>maximale Feutigkeit:</p>
+            <p>analog Input Nr.:</p>
+          </div>
+
+          <div class="col-7">
+            <input id="selPlName" name="selPlName" type="text"><br>
+            <input id="selVtNum" name="selVtNum" type="number" min="0" max="200"><br>
+            
+            <select id="ventmode" name="ventmode">
+              <option value="0">Sensor</option>
+              <option value="1">Intervall</option>
+            </select>
+            <br>
+            <input id="amount" name="amount" type="number">ml/d<br>
+            <input id="maxmoisture" max="100" name="moisture" type="number">%<br>
+            <input id="selInputNum" name="selInputNum"  type="number"><br>
+            <button id="saveval" >speichern</button>
+            <button id="delval" >löschen</button>
+
+          </div>
+
+          <div class="col-12">
+            <hr>
+            <button id="opVent">öffne Ventil</button>
+            <button id="50ml">+50ml</button>
+          </div>
+
+
+        </form>
+
+      </div>
+            
+    </body>
+</html>

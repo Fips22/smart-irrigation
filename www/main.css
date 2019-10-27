@@ -1,0 +1,114 @@
+html{
+  height: 100%
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+
+width: 80%;
+margin: auto;
+border: solid
+darkorchid;
+box-shadow: 0 4px 8px 0
+rgba(0, 0, 0, 0.2), 0 6px 20px 0
+rgba(0, 0, 0, 0.19);
+border-radius: 0px 0px 5px 5px;
+  
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+thead{
+	
+	background: #e2e6e6;
+}
+
+table{
+	border-spacing: 0px;
+	margin: auto; 
+    border: 1px solid gainsboro; 
+    border-collapse: separate; 
+}
+
+th,td{
+	padding: 3px 3px;
+	border-bottom: 1px dotted #000000;
+}
+
+td{
+  text-align: center;
+}
+
+
+form{
+
+	border: 1px solid gainsboro; 
+  min-width: 340px
+}
+
+form div:nth-child(1) p{
+  height: 21px;
+  margin: 21px 0px;
+}
+
+form div:nth-child(2) p{
+	height: 21px;
+	margin: 5px 0px;
+}
+
+form input,form select{
+    margin: 10px 0px 8px 0px;
+}
+
+button {
+ border:0;
+ border-radius:0.3rem;
+ background:#1fa3ec;
+ color:#ffffff;
+ line-height:2.4rem;
+ font-size:1.2rem;
+ 
+ -webkit-transition-duration:0.4s;
+ transition-duration:0.4s;
+ cursor:pointer;
+}
+button:hover {
+ background:#0e70a4;
+}
